@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کشاورزی</title>
+    <meta name="author" content="tgh ">
+    <link href="dist/images/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#d3aa69">
+    <link rel="stylesheet" href="dist/styles/common.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="dist/styles/profileCart.css">
+    <link rel="stylesheet" href="styles/profileCart.css">
+  </head>
+  <body>
+    <div class="login-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="login-modal__icon-wrapper"><span class="icon-user login-modal__icon"></span></div>
+          </div>
+          <div class="modal-body">
+            <div class="login-modal__body">
+              <div class="login-modal__form">
+                <form>
+                  <input class="user" type="text" value="Username">
+                  <input class="pass" type="password" value="Password">
+                </form>
+                <p><a href="#">رمز عبور خود را فراموش کرده اید؟</a></p>
+              </div>
+              <input type="submit" value="Login">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header-cart">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 header-cart__logo"><a href="index.html"><img class="header-cart__img" src="dist/images/content/logo.png" alt="pic"></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="pallet-wrapper">
+      <div class="toggler-pallet"><span class="toggler-pallet-item icon icon-angle-right"></span></div>
+      <div class="pallets">
+        <ul class="color-pallet">
+          <li class="color-pallet-item-show-color" data-color-id="1" style="--data-color:#29563f;" data-color="--data-color:#29563f;--color2:#fbbf45;--color3:#fbe172;--color4:#588b44;--color5:#fef3de;"></li>
+          <li class="color-pallet-item-show-color" data-color-id="2" style="--data-color:#795446;" data-color="--data-color:#795446;--color2:#fbbf45;--color3:#7d7660;--color4:#94914e;--color5:#fef3de"></li>
+          <li class="color-pallet-item-show-color" data-color-id="3" style="--data-color:#23504d;" data-color="--data-color:#23504d;--color2:#a5cf61;--color3:#e3e567;--color4:#568258;--color5:#e9f8ea"></li>
+        </ul>
+        <ul class="color-pallet">
+          <li class="color-pallet-item-show-color" data-color-id="4" style="--data-color:#5d7b6f;" data-color="--data-color:#5d7b6f;--color2:#a4c3a2;--color3:#b0d4b8;--color4:#568258;--color5:#eae7d6"></li>
+          <li class="color-pallet-item-show-color" data-color-id="5" style="--data-color:#2c6e49;" data-color="--data-color:#2c6e49;--color2:#d68c45;--color3:#ffc9b9;--color4:#4c956c;--color5:#fefee3"></li>
+          <li class="color-pallet-item-show-color" data-color-id="6" style="--data-color:#34262b;" data-color="--data-color:#34262b;--color2:#cc674e;--color3:#e88200;--color4:#e88200;--color5:#fdf2b8"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container py-5">
+      <div class="checkout-wrap">  
+        <ul class="d-lg-flex d-none checkout-bar">
+          <li class="visited first"><a class="checkout-steps__item-link checkout-steps__item" href="cart2.html" data-title="مشخصات کاربر"></a></li>
+          <li class="visited"><a class="checkout-steps__item-link checkout-steps__item" data-title="اطلاعات آدرس" href="cart3.html"></a></li>
+          <li class="visited"><a class="checkout-steps__item-link checkout-steps__item" data-title="روش ارسال" href="cart4.html"></a></li>
+          <li class="visited"><a class="checkout-steps__item-link checkout-steps__item" data-title="روش پرداخت" href="cart5.html">   </a></li>
+          <li class="last"><a class="checkout-steps__item checkout-steps__item--payment" data-title="اتمام خرید و بازبینی"></a></li>
+        </ul>
+      </div>
+      <!-- سبد خرید-->
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="profile-cart">
+            <div class="profile-cart__header"><span>انتخاب روش پرداخت</span></div>
+            <div class="payment">
+              <p class="payment__title">پرداخت آنلاین با بانک :</p>
+              <div class="payment__methods-list">
+                <div class="payment__method">
+                  <label class="payment__label">
+                    <input class="payment__input" type="radio" name="meli" value="meli"><img class="payment__img" src="dist/images/content/b1.png">بانک ملی
+                  </label>
+                </div>
+                <div class="payment__method">
+                  <label class="payment__label">
+                    <input class="payment__input" type="radio" name="meli" value="meli"><img class="payment__img" src="dist/images/content/b2.png">بانک سرمایه							
+                  </label>
+                </div>
+                <div class="payment__method">
+                  <label class="payment__label">
+                    <input class="payment__input" type="radio" name="meli" value="meli"><img class="payment__img" src="dist/images/content/b3.png">بانک پارسیان
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 txt p-4">
+                <label>چنانچه ملاحظاتی مد نظر دارید<b>( از قبیل ساعت تحویل )</b> در کادر زیر درج فرمایید:</label>
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+          <div class="profile-cart">
+            <div class="profile-cart__header">خلاصه سبد خرید</div>
+            <div class="cart-summary">
+              <div class="cart-summary__price">
+                <div class="cart-summary__item"><span>قیمت (3 مورد)</span><span>658,974 تومان</span></div>
+                <div class="cart-summary__item"><span>هزینه ارسال</span><span>وابسته به شهر</span></div>
+              </div>
+              <div class="cart-summary__subtotal">
+                <div class="cart-summary__price-cart"><span>مبلغ کل پرداخت</span><span>1,258,974 تومان</span></div>
+              </div><a class="cart-summary__button-next" href="cart6.html"> ادامه فرآیند خرید </a><a class="cart-summary__button-back" href="cart4.html"> بازگشت به مرحله قبل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--******** end of #main ********//-->
+    <script src="dist/scripts/common.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+  <!-- body-->
+</html>

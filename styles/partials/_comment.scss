@@ -1,0 +1,424 @@
+// comment
+.userComments-list {
+    background: #ffffff57;
+    border: none;
+    padding: 50px;
+    box-shadow: 0px 0px 6px 1px #d0d0d040;
+    @media (max-width: 425px) {
+        padding: 10px;
+    }
+    .page-title {
+        color: #4d4d4d;
+        font-size: 2.1rem;
+    }
+    .addComment {
+        input.form-control {
+            font-size: 1.2rem;
+            height: 40px;
+            border: 1px solid #e2e2e2;
+            background-color: white;
+        }
+        .captcha {
+            position: absolute;
+            left: 4px;
+            bottom: 4px;
+            a {
+                position: absolute;
+                left: 98px;
+                bottom: 0;
+                color: $color-base;
+                span {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+        textarea.form-control {
+            font-size: 1.2rem;
+            border: 1px solid #e2e2e2;
+            background-color: white;
+        }
+        .check-srch {
+            padding: 6px;
+            margin-top: 0px;
+            .custom-control-label {
+                position: relative;
+                margin-bottom: 0;
+                padding-right: 34px;
+                font-size: 1.4rem;
+                &::before {
+                    position: absolute;
+                    top: 0.25rem;
+                    right: 0.5rem;
+                    display: block;
+                    width: 2rem;
+                    height: 2rem;
+                    pointer-events: none;
+                    content: "";
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    background-color: #fff;
+                    box-shadow: none;
+                }
+                &::after {
+                    position: absolute;
+                    top: 0.25rem;
+                    right: 0.5rem;
+                    display: block;
+                    width: 2rem;
+                    height: 2rem;
+                    content: "";
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 50% 50%;
+                    border: 1px solid $color-base;
+                    @include border-radius(5px);
+                }
+            }
+        }
+        .default-btn {
+            @include flexrow-center;
+            margin: 20px 0;
+            button {
+                font-size: 1.3rem;
+                @include border-radius(5px);
+                border: none;
+                background-color: $color-base;
+                color: white;
+                cursor: pointer;
+                padding: 7px 15px;
+                &:hover {
+                    background-color: $color-base-hover;
+                }
+            }
+        }
+    }
+}
+
+.ul-defult {
+    display: flow-root;
+    .user-comment-container {
+        margin: 30px 0;
+        display: flex-row;
+        background: #fdfcfc9e;
+        .headerComment {
+            padding: 10px 15px;
+            justify-content: space-between;
+            @include d-flex;
+            .user-info {
+                @include d-flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                p {
+                    direction: rtl;
+                    color: #494949;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                    margin: 0;
+                    time {
+                        display: block;
+                        color: #494949;
+                        font-size: 1.1rem;
+                    }
+                }
+                i {
+                    font-size: 3rem;
+                    color: $color-base;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+.bodyComment {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    @include border-radius(5px);
+    p {
+        text-align: justify;
+        font-size: 1.4rem;
+        line-height: 2.2em;
+        color: #666;
+    }
+}
+
+.user-answer {
+    margin: 30px 0;
+    .titleComment {
+        position: relative;
+        margin-right: 20px;
+        padding: 15px;
+        margin: 0 0 15px;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        text-align: justify;
+    }
+    .bodyComment {
+        border-bottom: none;
+    }
+}
+
+.command-nazar {
+    margin: 20px 0;
+    %common-nazar {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 0;
+        padding-left: 0;
+        @include d-flex;
+    }
+    %list-styl {
+        width: 6px;
+        height: 6px;
+        background: #ccc;
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: 0;
+    }
+    .command-nazar-positive {
+        @extend %common-nazar;
+        span {
+            color: #00bfd6;
+            width: 80px;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            font-size: 1.6rem;
+            line-height: 1.571;
+            white-space: nowrap;
+        }
+        ul {
+            display: block;
+            li {
+                margin-bottom: 12px;
+                padding-right: 17px;
+                color: #5f5f5f;
+                position: relative;
+                font-size: 1.4rem;
+                &:before {
+                    background-color: #00bfd6;
+                    @extend %list-styl;
+                }
+            }
+        }
+    }
+    .command-nazar-negative {
+        @extend %common-nazar;
+        span {
+            color: #d60040;
+            width: 80px;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            font-size: 1.6rem;
+            line-height: 1.571;
+            white-space: nowrap;
+        }
+        ul {
+            display: block;
+            li {
+                margin-bottom: 12px;
+                padding-right: 17px;
+                color: #5f5f5f;
+                position: relative;
+                font-size: 1.4rem;
+                &:before {
+                    background-color: #d6002e;
+                    @extend %list-styl;
+                }
+            }
+        }
+    }
+}
+
+.c-message {
+    @include d-flex;
+    %all-message {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        background-color: #f1feff;
+        @include flexrow-center;
+        border-radius: 3px;
+        padding: 8px 40px 8px 12px;
+    }
+    .c-message-positive {
+        @extend %all-message;
+        color: #1599a9;
+        border: 1px solid #c2f2f7;
+        margin-left: 9px;
+        span {
+            padding-left: 13px;
+            font-size: 2rem;
+        }
+    }
+    .c-message-negative {
+        color: #a9152e;
+        border: 1px solid #f7c2c6;
+        background-color: #fff1f1;
+        @extend %all-message;
+        span {
+            padding-left: 13px;
+            font-size: 2rem;
+        }
+    }
+}
+
+.box-like {
+    @include d-flex;
+    form {
+        button {
+            .icon-heart {
+                font-size: 2.4rem;
+                color: $color-base;
+            }
+        }
+        span {
+            font-size: 1.4rem;
+            color: #999999;
+        }
+    }
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
+    background-image: none;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-color: $color-base-hover;
+    @include border-radius(5px);
+}
+
+.pros {
+    position: relative;
+    // &__input{}
+    &__button {
+        position: absolute;
+        top: 33px;
+        left: 5px;
+        border: none;
+        font-size: 1.6rem;
+        background-color: inherit;
+        color: $color-base;
+        @include flexrow-center;
+        cursor: pointer;
+    }
+    // &__wrapper {
+    //     padding-right: 10px;
+    // }
+    &__list {
+        @include d-flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    &__items {
+        display: flex;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-right: 10px;
+        color: #1b1b1b;
+        background: #d7fadf;
+        padding: 8px 15px;
+        border-radius: 5px;
+        &::before {
+            width: 6px;
+            height: 6px;
+            background: #ccc;
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            top: 14px;
+            right: 5px;
+            background-color: #269e14;
+        }
+    }
+    &__close {
+        &::after {
+            font-family: "icomoon";
+            content: "\e90a";
+            color: #444;
+            padding-left: 12px;
+            color: #850404;
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+            top: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.cons {
+    position: relative;
+    // &__input{}
+    &__button {
+        position: absolute;
+        top: 33px;
+        left: 5px;
+        border: none;
+        font-size: 1.6rem;
+        background-color: inherit;
+        color: $color-base;
+        @include flexrow-center;
+        cursor: pointer;
+    }
+    // &__wrapper {
+    //     // padding-right: 10px;
+    // }
+    &__list {
+        @include d-flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    &__items {
+        display: flex;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-right: 10px;
+        color: #1b1b1b;
+        background: #ffe5e5;
+        padding: 8px 15px;
+        border-radius: 5px;
+        &::before {
+            width: 6px;
+            height: 6px;
+            background: #ccc;
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            top: 14px;
+            right: 5px;
+            background-color: #c30000;
+        }
+    }
+    &__close {
+        &::after {
+            font-family: "icomoon";
+            content: "\e90a";
+            color: #444;
+            padding-left: 12px;
+            color: #850404;
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+            top: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-nazar {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: $color-base;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}

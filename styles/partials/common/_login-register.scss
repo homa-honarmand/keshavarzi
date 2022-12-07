@@ -1,0 +1,39 @@
+.modal {
+    z-index: 999999999;
+}
+
+.login-modal {
+    .modal-header {
+        border: none;
+    }
+    .close {
+        margin: -1rem auto -1rem -1rem !important;
+        font-size: 1.7rem;
+    }
+    .modal-dialog {
+        max-width: 450px;
+    }
+    .modal-content {
+        &::before {
+            content: '';
+            width: fit-content;
+            filter: blur(10px);
+        }
+    }
+    &__icon-wrapper {
+        width: 100px;
+        height: 100px;
+        // position: absolute;
+        background-color: $color-base;
+        @include border-radius( 50%);
+        top: -54px;
+        right: 50%;
+        left: 50%;
+        transform: translate(50%, 0);
+        @include flexrow-center;
+    }
+    &__icon {
+        font-size: 5.5rem;
+        color: white;
+    }
+}

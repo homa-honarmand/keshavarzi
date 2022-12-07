@@ -1,0 +1,26 @@
+extends partials/_layout
+block headStyle
+    link(rel='stylesheet', href='dist/styles/detailProduct.css')
+block header
+    include partials/header/_header
+    include partials/_pallet
+block content
+    include partials/_breadcrumb
+    section.about-us
+        .container 
+            .row
+                h1.titles
+                    | درباره ما
+                include partials/det-product/_det-product-slider
+                include partials/det-product/_det-product-description
+        section.det-product    
+            include partials/det-product/_det-product-detail
+        .container
+            include partials/det-product/_det-product-similar
+            include partials/det-product/_det-product-comment 
+block footer
+    include partials/footer/_footer
+block scripts
+    script(src='dist/scripts/detailProduct.js')
+
+    

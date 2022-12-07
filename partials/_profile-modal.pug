@@ -1,0 +1,31 @@
+#profileModal.modal.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header
+                h6#exampleModalLabel1.modal-title &#x62D;&#x633;&#x627;&#x628; &#x6A9;&#x627;&#x631;&#x628;&#x631;&#x6CC; &#x645;&#x646;
+                button.close.text-left(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                .content-page-user-header
+                    .content-page-user-header-img
+                        input#img-edit1(type='file', hidden='')
+                        label.content-page-user-header-img-edit(for='img-edit1')
+                          img(src='images/img-user.jpg', alt='pic')
+                    .content-page-user-header-bottom
+                        .content-page-user-header-name
+                          span علیرضا حاجی قدیری
+                        .content-page-user-header-link
+                          a(href='profile-password.html')
+                            i.icon-padlock-unlock
+                            | تغییر رمز عبور
+                          a(href='#')
+                            i.icon-logout
+                            | خروج از حساب
+                .content-page-user-menu
+                      .list-group
+                        a.list-group-item.list-group-item-action(href='profile.html')
+                          | ویرایش پروفایل شخصی
+                        a.list-group-item.list-group-item-action.active(href='profile-address.html')
+                          | دفترچه آدرس های من
+                        a.list-group-item.list-group-item-action(href='profile-order.html')
+                          | همه سفارش های من

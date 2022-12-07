@@ -1,0 +1,25 @@
+.col-12.col-lg-4.col-xl-3.d-none.d-lg-block.content-page-user
+              .content-page-user-header
+                .content-page-user-header-img
+                  input#img-edit(type='file', hidden='')
+                  label.content-page-user-header-img-edit(for='img-edit')
+                    // <i class="fa fa-user"></i>
+                    img(src='images/img-user.jpg', alt='pic')
+                .content-page-user-header-bottom
+                    .content-page-user-header-name
+                      span علیرضا حاجی غدیری
+                    .content-page-user-header-link
+                      a(href='profile-password.html')
+                        i.icon-padlock-unlock
+                        | تغییر رمز عبور
+                      a(href='#')
+                        i.icon-logout
+                        | خروج از حساب
+              .content-page-user-menu
+                .list-group
+                  a.list-group-item.list-group-item-action.active(href='profile.html')
+                    | ویرایش پروفایل شخصی
+                  a.list-group-item.list-group-item-action(href='profile-address.html')
+                    | دفترچه آدرس های من
+                  a.list-group-item.list-group-item-action(href='profile-order.html')
+                    | همه سفارش های من

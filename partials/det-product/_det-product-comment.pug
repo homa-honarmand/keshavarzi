@@ -1,0 +1,109 @@
+.row.comments-row.mt-5.mx-0
+  .userComments-list.col-12.py-4
+    .col-12
+      .widget-title
+        .col-12.text-center.mb-1
+          p.titr-15 نظرات کاربران
+    .col-12.addComment
+      
+        form#contact-form
+          .row
+            .col-md-6.col-12.p-0
+              .form-group
+                label.form-card__label نام و نام خانوادگی
+                input.form-control#recipient-name(type='text', placeholder='نام خود را وارد نمایید' required)
+              .form-group
+                label.form-card__label ایمیل
+                input.form-control#recipient-email(type='email', placeholder='رایانامه خود را وارد نمایید' required)
+              .form-group.pros
+                label.form-card__label نقاط قوت
+                input.pros__input.form-control#recipient-Strength(type='text', placeholder='نقاط قوت')
+                button.pros__button
+                  span.icon-plus-circle
+              .pros__wrapper
+                ul.pros__list
+              .form-group.cons
+                label.form-card__label نقاط ضعف
+                input.cons__input.form-control#recipient-Weakness(type='text', placeholder='نقاط ضعف ')
+                button.cons__button
+                  span.icon-plus-circle
+              .cons__wrapper
+                ul.cons__list
+              .form-group.position-relative
+                label.form-card__label کد امنیتی
+                input.form-control#captcha(type='text', name='captcha', placeholder='کد امنیتی را وارد کنید.', autocomplete='off' required)
+                .captcha
+                  a(href='#')
+                    span.icon-reload-circle
+                  img.img(title='Captcha', src='http://www.bazzarbeauty.com/captcha/default?Ovyr7qqP', alt='کد امنیتی' required)
+            .col-md-6.col-12.text.p-0.px-md-4
+              .form-group.comments-textarea
+                label.form-card__label متن نقد و بررسی شما
+                textarea.form-control(rows='7', placeholder='متن نقد و بررسی شما')
+              .custom-control.custom-checkbox.check-srch.form-check-input
+                input.custom-control-input#c-1(type='radio', name='productgroup', value='22')
+                label.custom-control-label(for='c-1') این محصول را پیشنهاد می کنم
+              .custom-control.custom-checkbox.check-srch.form-check-input
+                input.custom-control-input#c-2(type='radio', name='productgroup', value='22')
+                label.custom-control-label(for='c-2') این محصول را پیشنهاد نمی کنم
+            .col-12.pr-0.d-flex.justify-content-end.mt-5
+                button.btn-default.btn-nazar(type="submit") ثبت نظر
+  .col-12.p-0
+    ul.ul-defult
+      li
+        .user-comment-container
+          .headerComment
+            .user-info
+              i.icon-message-square
+              p
+                span علیرضا حاجی قدیری راوندی
+                time(datetime='2008-02-14 20:00') 26 اردبیهشت 1395
+            
+          .bodyComment
+            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            .command-nazar
+              .command-nazar-positive
+                span نقاط قوت
+                ul
+                  li کیفیت مناسب
+                  li کیفیت مناسب
+                  li کیفیت مناسب
+              .command-nazar-negative
+                span نقاط ضعف
+                ul
+                  li نداشت
+            .c-message
+              .col-sm-6.d-none.c-message-positive
+                span.icon-like
+                | خرید این محصول را توصیه می‌کنم
+              .col-sm-6.c-message-negative
+                span.icon-dislike
+                | خرید این محصول را توصیه نمی‌کنم
+            ul.ul-defult
+              li
+                .user-comment-container.user-answer
+                  .headerComment
+                    .user-info
+                      i.icon-message-square
+                      p
+                        span سید ابوالفضل طباطبایی
+                        time(datetime='2008-02-14 20:00').
+                          26 اردبیهشت 1395
+                          
+                    
+                  .bodyComment
+                    .titleComment.
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                      
+      li
+        .user-comment-container
+          .headerComment
+            .user-info
+              i.icon-message-square
+              p
+                span علیرضا حاجی قدیری راوندی
+                time(datetime='2008-02-14 20:00') 26 اردبیهشت 1395
+            
+              
+          .bodyComment
+            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.

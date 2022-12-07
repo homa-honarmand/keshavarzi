@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کشاورزی</title>
+    <meta name="author" content="tgh ">
+    <link href="dist/images/favicon/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#d3aa69">
+    <link rel="stylesheet" href="dist/styles/common.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <title>کشاورزی</title>
+  </head>
+  <body>
+    <div class="login modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <label class="form-card__label" for="phone">شماره موبایل</label>
+                      <input class="form-card__input" type="text" required="" name="phone" placeholder="شماره موبایل خود را وارد کنید" id="phone">
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                    <div class="login__line my-4"> 
+                      <p class="login__line-text">یا</p>
+                    </div>
+                    <button class="mx-2 login__social" type="submit"> <span class="icon-google"></span>ورود با حساب گوگل</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <div class="form-card__field">
+                        <label class="form-card__label" for="new">کد تایید برای شماره موبایل۰۹۳۳۸۰۶۹۲۵۴ارسال گردید</label>
+                        <input class="form-card__input" type="password" name="code" required="" placeholder=" کد ارسالی" id="new">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                  </div>
+                  <div class="col-12 login__resend">
+                    <p class="login__text">اعتبار کد تا 03:00 </p>
+                    <button><span class="icon-reload"> </span>ارسال مجدد</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="login__return">
+              <button class="login__return-btn">
+                 بازگشت        </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <div class="form-card__field">
+                        <label class="form-card__label" for="new">رمز عبور </label>
+                        <input class="form-card__input" type="password" name="password" required="" placeholder=" رمز عبور خود را وارد کنید." id="new">
+                        <input class="form-card__input mt-2" type="password" name="password" required="" placeholder="تکرار مجدد رمز عبور.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="login__return">
+              <button class="login__return-btn">
+                 بازگشت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="login__icon-wrapper mt-3"><span class="icon-user login__icon"></span></div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login__form">
+              <form class="validate-form form-card">
+                <div class="row m-0">
+                  <div class="col-12 form-card__field">
+                    <div class="form-card__field">
+                      <div class="form-card__field">
+                        <label class="form-card__label" for="new">رمز عبور </label>
+                        <input class="form-card__input" type="password" name="password" required="" placeholder=" رمز عبور خود را وارد کنید." id="new">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 login__buttons">
+                    <button class="login__confirm" type="submit">ادامه</button>
+                  </div>
+                  <div class="col-12 login__link-wrapper"><a class="login__link" href="">ورود با رمز یکبار مصرف </a><a class="login__link" href="">رمز عبور خود را فراموش کرده اید؟ </a></div>
+                </div>
+              </form>
+            </div>
+            <div class="login__return">
+              <button class="login__return-btn">
+                 بازگشت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <section class="top-head">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-6 nav-social"> 
+              <ul class="nav-social__list"> 
+                <li class="nav-social__item"> <a class="nav-social__link icon-telegram" href=""> </a></li>
+                <li class="nav-social__item"> <a class="nav-social__link icon-whatsapp" href=""> </a></li>
+                <li class="nav-social__item"> <a class="nav-social__link icon-instagram" href=""> </a></li>
+                <li class="nav-social__item"> <a class="nav-social__link icon-facebook" href=""> </a></li>
+              </ul>
+            </div>
+            <div class="col-6 top-access"> 
+              <div class="top-access__email-wrapper d-sm-flex d-none"><span class="top-access__email-icon icon-envelope"></span>
+                <p class="top-access__email-text">info@keshavarzi.com </p>
+              </div>
+              <ul class="user">
+                <li class="user__item">
+                  <button class="user__logs" type="button" data-toggle="modal" data-target=".login">ورود				</button>
+                </li>
+                <li class="user__item">/</li>
+                <li class="user__item">
+                  <button class="user__logs" type="button" data-toggle="modal" data-target=".login">عضویت</button>
+                </li>
+                <!-- li.user__item-->
+                <!-- 	a.user__panel.user__logs(href='profile.html')-->
+                <!-- 		span.user__icon.icon-user-->
+                <!-- 		span.user__title تهمینه غلامیان-->
+                <!-- li.user__item-->
+                <!-- 	a.user__panel.user__logs(href='profile.html')-->
+                <!-- 		span.user__icon.icon-logout-->
+                <!-- 		span.user__title خروج-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fixed-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-lg-2 logo order-1 order-lg-0">
+              <h1><a href="index.html"><img src="dist/images/content/logo.png" alt="کشاورزی"></a></h1>
+            </div>
+            <div class="hamburger">
+              <ul class="hamburger-box">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="col-4 col-lg-8 order-0 order-lg-1">
+              <div class="col-auto navbar p-0">
+                <div class="navbar-navigation">
+                  <ul class="navbar-nav">
+                    <li class="nav-logo"><img class="nav-logo__img" src="dist/images/content/logo.png" alt=""></li>
+                    <li class="nav-item nav-user d-lg-none"><span class="nav-user__name">علیرضا حاجی قدیری</span><span class="nav-user__email">alireza.ha@gmail.com</span></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="profile.html">پروفایل</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="profile-myheart.html">
+                                                 علاقه مندی های شما</a></li>
+                    <li class="nav-item nav-line d-lg-none"></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">صفحه نخست</a></li>
+                    <li class="nav-item mdropdown"><a class="nav-link mdropdown__button" data-toggle="collapse" href="#collapseProduct1" aria-expanded="false">محصولات</a>
+                      <ul class="collapse mdropdown__menu" id="collapseProduct1">
+                        <li class="nav-item"><a class="nav-link mdropdown__button" data-toggle="collapse" href="#collapseProduct2" aria-expanded="false">سیمان</a>
+                          <ul class="collapse mdropdown__sub-menu" id="collapseProduct2">
+                            <li class="nav-item"><a class="nav-link" href="archive-product.html">سیمان</a></li>
+                            <li class="nav-item"><a class="nav-link" href="archive-product.html">آجر</a></li>
+                            <li class="nav-item"><a class="nav-link" href="archive-product.html">بلوک سیمانی    </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="archive-product.html">آجر</a></li>
+                        <li class="nav-item"><a class="nav-link" href="archive-product.html">بلوک سیمانی</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item mdropdown"><a class="nav-link mdropdown__button" data-toggle="collapse" href="#collapseNews" aria-expanded="false">مطالب آموزشی</a>
+                      <ul class="collapse mdropdown__menu" id="collapseNews">
+                        <li class="nav-item"><a class="nav-link" href="archive-product.html">آجر</a></li>
+                        <li class="nav-item"><a class="nav-link" href="archive-product.html">بلوک سیمانی</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="archive-video.html">ویدئو</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">درباره ما</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">تماس با ما</a></li>
+                    <li class="nav-item nav-line d-lg-none"></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="#">خروج          </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 order-2">
+              <div class="accessibility-items">
+                <div class="access-item md-search">
+                  <button class="access-style nav-search" type="button" data-toggle="modal" data-target=".bd-example-modal"><span class="icon-search"></span></button>
+                  <div class="modal fade bd-example-modal search-focus" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body search-center">
+                          <form class="search-form">
+                            <input class="search-index search-input" type="search" placeholder="کالای خود را اینجا جست‌و‌جو کنید ...">
+                            <button class="search-button" type="submit"><span class="icon-search"></span></button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="access-item">
+                  <!--navigation-cart--><a class="access-style shop-cart" id="navigation-cart" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="shop-cart__icon icon-shopping-cart"></i><span class="shop-cart__cartNumber">25</span></a>
+                  <div class="dropdown-menu shop" aria-labelledby="navigation-cart">
+                    <div class="shop__header"><span class="shop__header-title">(25 کالا) سبد شما</span><a class="shop__header-more" href="cart1.html">مشاهده ی سبد خرید<span class="shop__header-icon icon-angle-left"></span></a></div>
+                    <ul class="shop__list">
+                                        <li class="shop__list-item"><a class="shop__list-img-wrapper" href="#">
+                                            <!--67*67--><img class="shop__list-img" src="dist/images/product/01.jpg" alt="pic"></a>
+                                          <div class="shop__info"><a class="shop__info-title" href="#">
+                                              <p>بیل</p></a><span class="shop__info-price">5,962,000 تومان</span>
+                                            <div class="discount"><span class="discount__tag">10%</span><span class="discount__real-price">4,000,000</span></div>
+                                            <spana class="shop__info-quantity">2 عدد</spana>
+                                          </div><a class="shop__list-delete"><span class="icon-trash"></span></a>
+                                        </li>
+                                        <li class="shop__list-item"><a class="shop__list-img-wrapper" href="#">
+                                            <!--67*67--><img class="shop__list-img" src="dist/images/product/02.jpg" alt="pic"></a>
+                                          <div class="shop__info"><a class="shop__info-title" href="#">
+                                              <p>کود</p></a><span class="shop__info-price">5,962,000 تومان</span>
+                                            <div class="discount"><span class="discount__tag">10%</span><span class="discount__real-price">4,000,000</span></div>
+                                            <spana class="shop__info-quantity">2 عدد</spana>
+                                          </div><a class="shop__list-delete"><span class="icon-trash"></span></a>
+                                        </li>
+                                        <li class="shop__list-item"><a class="shop__list-img-wrapper" href="#">
+                                            <!--67*67--><img class="shop__list-img" src="dist/images/product/03.jpg" alt="pic"></a>
+                                          <div class="shop__info"><a class="shop__info-title" href="#">
+                                              <p>شنکش</p></a><span class="shop__info-price">5,962,000 تومان</span>
+                                            <div class="discount"><span class="discount__tag">10%</span><span class="discount__real-price">4,000,000</span></div>
+                                            <spana class="shop__info-quantity">2 عدد</spana>
+                                          </div><a class="shop__list-delete"><span class="icon-trash"></span></a>
+                                        </li>
+                                        <li class="shop__list-item"><a class="shop__list-img-wrapper" href="#">
+                                            <!--67*67--><img class="shop__list-img" src="dist/images/product/04.jpg" alt="pic"></a>
+                                          <div class="shop__info"><a class="shop__info-title" href="#">
+                                              <p>دانه</p></a><span class="shop__info-price">5,962,000 تومان</span>
+                                            <div class="discount"><span class="discount__tag">10%</span><span class="discount__real-price">4,000,000</span></div>
+                                            <spana class="shop__info-quantity">2 عدد</spana>
+                                          </div><a class="shop__list-delete"><span class="icon-trash"></span></a>
+                                        </li>
+                    </ul>
+                    <div class="shop__footer"><a class="shop__footer-btn" href="cart1.html">تسویه حساب</a>
+                      <div class="shop__footer-subtotal">
+                        <p class="shop__footer-text">مبلغ قابل پرداخت</p><span class="shop__footer-price">25,378,000</span>
+                        <p class="shop__footer-text">تومان</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div class="pallet-wrapper">
+      <div class="toggler-pallet"><span class="toggler-pallet-item icon icon-angle-right"></span></div>
+      <div class="pallets">
+        <ul class="color-pallet">
+          <li class="color-pallet-item-show-color" data-color-id="1" style="--data-color:#29563f;" data-color="--data-color:#29563f;--color2:#fbbf45;--color3:#fbe172;--color4:#588b44;--color5:#fef3de;"></li>
+          <li class="color-pallet-item-show-color" data-color-id="2" style="--data-color:#795446;" data-color="--data-color:#795446;--color2:#fbbf45;--color3:#7d7660;--color4:#94914e;--color5:#fef3de"></li>
+          <li class="color-pallet-item-show-color" data-color-id="3" style="--data-color:#23504d;" data-color="--data-color:#23504d;--color2:#a5cf61;--color3:#e3e567;--color4:#568258;--color5:#e9f8ea"></li>
+        </ul>
+        <ul class="color-pallet">
+          <li class="color-pallet-item-show-color" data-color-id="4" style="--data-color:#5d7b6f;" data-color="--data-color:#5d7b6f;--color2:#a4c3a2;--color3:#b0d4b8;--color4:#568258;--color5:#eae7d6"></li>
+          <li class="color-pallet-item-show-color" data-color-id="5" style="--data-color:#2c6e49;" data-color="--data-color:#2c6e49;--color2:#d68c45;--color3:#ffc9b9;--color4:#4c956c;--color5:#fefee3"></li>
+          <li class="color-pallet-item-show-color" data-color-id="6" style="--data-color:#34262b;" data-color="--data-color:#34262b;--color2:#cc674e;--color3:#e88200;--color4:#e88200;--color5:#fdf2b8"></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="inner-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 breadcrumb-flex">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html"><span class="breadcrumb__icon icon-home"></span>خانه</a></li>
+                  <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">آرشیو</a></li>
+                  <li class="breadcrumb__item active">درباره ما </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <h1 class="titles">گالری
+            </h1>
+                          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <!--image size 350*173-->
+                            <figure class="video"><img class="video__img" src="images/video/video-1.jpg"><span class="video__icon icon-image"></span>
+                              <figcaption class="video__content">
+                                <h2 class="video__title">ویدئو شماره یک</h2>
+                              </figcaption><a class="video__link" href="detail-gallery.html"></a>
+                            </figure>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <!--image size 350*173-->
+                            <figure class="video"><img class="video__img" src="images/video/video-1.jpg"><span class="video__icon icon-image"></span>
+                              <figcaption class="video__content">
+                                <h2 class="video__title">ای عزیزای دلم</h2>
+                              </figcaption><a class="video__link" href="detail-gallery.html"></a>
+                            </figure>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <!--image size 350*173-->
+                            <figure class="video"><img class="video__img" src="images/video/video-1.jpg"><span class="video__icon icon-image"></span>
+                              <figcaption class="video__content">
+                                <h2 class="video__title">غنچه تو باغچه ها جادر میشه باز</h2>
+                              </figcaption><a class="video__link" href="detail-gallery.html"></a>
+                            </figure>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <!--image size 350*173-->
+                            <figure class="video"><img class="video__img" src="images/video/video-1.jpg"><span class="video__icon icon-image"></span>
+                              <figcaption class="video__content">
+                                <h2 class="video__title">ویدئو شماره یک</h2>
+                              </figcaption><a class="video__link" href="detail-gallery.html"></a>
+                            </figure>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <!--image size 350*173-->
+                            <figure class="video"><img class="video__img" src="images/video/video-1.jpg"><span class="video__icon icon-image"></span>
+                              <figcaption class="video__content">
+                                <h2 class="video__title">ای عزیزای دلم</h2>
+                              </figcaption><a class="video__link" href="detail-gallery.html"></a>
+                            </figure>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <!--image size 350*173-->
+                            <figure class="video"><img class="video__img" src="images/video/video-1.jpg"><span class="video__icon icon-image"></span>
+                              <figcaption class="video__content">
+                                <h2 class="video__title">غنچه تو باغچه ها جادر میشه باز</h2>
+                              </figcaption><a class="video__link" href="detail-gallery.html"></a>
+                            </figure>
+                          </div>
+            <div class="col-12">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center my-pagination">
+                  <li class="page-item"><a class="page-link" href="#">
+                       <span class="icon-angle-right"></span></a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><span class="icon-angle-left"></span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--******** end of #main ********//-->
+    <footer id="my-animation">
+      <div class="container">
+        <div class="growing-seed"></div>
+        <div class="row">
+          <div class="col-md-5 contact">
+            <h5 class="contact__title">اطلاعات تماس</h5>
+            <div class="contact__wrapper">
+              <div class="contact__place"><span class="icon-map"></span>تهران - خیابان دماوند (سمت غرب به شرق) بعد از خاقانی ، جنب مجتمع پذیرایی آرتمیس ، پلاک222</div>
+              <ul class="contact__list">
+                <li class="contact__item"><span class="icon-phone-ring"></span>تلفن : 031 - 555515555</li>
+                <li class="contact__item"><span class="icon-mobile"></span>موبایل : 09131738273</li>
+                <li class="contact__item"><span class="icon-envelope"></span>ایمیل: info@keshavarzi.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 easyaccess">
+            <h5 class="easyaccess__title">دسترسی آسان</h5>
+            <nav>
+              <ul class="easyaccess__list">
+                <li class="easyaccess__item"><a class="easyaccess__link" href="index.html">خانه</a></li>
+                <li class="easyaccess__item"><a class="easyaccess__link" href="archive-article.html">مقالات</a></li>
+                <li class="easyaccess__item"><a class="easyaccess__link" href="archive-video.html">ویدئو</a></li>
+                <li class="easyaccess__item"><a class="easyaccess__link" href="faq.html">سوالات متداول</a></li>
+                <li class="easyaccess__item"><a class="easyaccess__link" href="suggestions.html">انتقادات و پیشنهادات</a></li>
+                <li class="easyaccess__item"><a class="easyaccess__link" href="about-us.html">درباره ما</a></li>
+                <li class="easyaccess__item"><a class="easyaccess__link" href="contact-us.html">تماس با ما</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-3 signs">
+            <div class="row">
+              <div class="col-12 signs__list"><img class="signs__img img-fluid" alt="" src="dist/images/content/e-sign.png"><img class="signs__img img-fluid" src="dist/images/content/kasb-kar.png" alt=""></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="social-footer">
+                  <ul class="social-footer__wrapper">
+                    <li class="social-footer__item"><a class="social-footer__link" href="#"><span class="icon-instagram social-footer__icon"></span></a></li>
+                    <li class="social-footer__item"><a class="social-footer__link" href="#"><span class="icon-telegram social-footer__icon"></span></a></li>
+                    <li class="social-footer__item"><a class="social-footer__link" href="#"><span class="icon-whatsapp social-footer__icon"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="inc-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 rights">
+              <div class="py-1">
+                <p>کلیه حقوق این وب سایت متعلق به سایت کشاورزی می باشد.</p>
+                <h6>طراحی و برنامه نویسی : <a href="https://www.itsaco.ir/" target="_blank" rel="noopener">فناوری اطلاعات آیتیسا</a></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button id="scroll-up">scroll-up<span class="icon-angle-circle-up"></span></button>
+    </footer>
+    <script src="dist/scripts/common.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+  <!-- body-->
+</html>

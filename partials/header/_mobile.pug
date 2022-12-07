@@ -1,0 +1,60 @@
+.rnav
+  .burger
+    span
+    p منو
+  nav
+    div
+      .top-nav-xs
+        .img-logo-hamburger
+          a(href='index.html')
+            img(src='dist/images/content/logo.png', alt=' ')
+      ul.main-xs
+        li.dnl-xs
+          a(href='index.html') کشاورزی
+      .accordion.accordion-menu.indicator-plus-before.round-indicator
+        .card-header
+          a.card-title(href='index.html') خانه
+        .card.m-b-0
+          #accordion
+            .card-header#headingOne
+              button.card-titlek.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne') محصولات
+            .collapse#collapseOne(aria-labelledby='headingOne', data-parent='#accordion')
+              ul.card-body.body-in.inner-ul
+                li
+                  .card-header#headingOne1
+                    button.card-titlek.collapsed(data-toggle='collapse', data-target='#collapseOne1', aria-expanded='false', aria-controls='collapseOne1') بذر
+                  .collapse#collapseOne1(aria-labelledby='headingOne1', data-parent='#headingOne')
+                    ul.inner-ul
+                      li
+                        a(href='archive-product.html') چمن
+                      li
+                        a(href='archive-product.html') گوچه
+                li
+                  .card-header#headingOne2
+                    button.card-titlek.collapsed(data-toggle='collapse', data-target='#collapseOne2', aria-expanded='false', aria-controls='collapseOne2') کود
+                  .collapse#collapseOne2(aria-labelledby='headingOne2', data-parent='#headingOne')
+                    ul.inner-ul
+                      li
+                        a(href='archive-product.html') ماکرو
+                      li
+                        a(href='archive-product.html') میکرو
+                li
+                  a(href='archive-product.html') ادوات
+        
+        .card-header
+          a.nav-link(href='archive-article.html') مقالات
+        .card-header
+          a.nav-link(href='archive-news.html') اخبار
+        .card-header
+          a.nav-link(href='archive-video.html') ویدئو
+        .card-header
+          a.nav-link(href='about-us.html') درباره ما
+        .card-header
+          a.nav-link(href='contact-us.html') ارتباط با ما
+        .card-header
+          a.nav-link(href='suggestions.html') انتقادات و پیشنهادات
+        .card-header
+          a.nav-link(href='rules.html') قوانین
+        
+  .overlay
+
